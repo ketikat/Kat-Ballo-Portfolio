@@ -1,0 +1,42 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+* a {
+  color: black;
+  text-decoration: none;
+}
+
+
+.topMenu {
+		align-items: center;
+		justify-content: space-between;
+		background-color: #f4cbb5;
+		height: 10%;
+		width: 100%;
+		display: flex;
+		position: fixed;
+		z-index: 99;
+}
+
+.menuItem {
+    margin: 2em;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/*hiding the meta data/text*/
+.hide {
+   	position: absolute !important;
+   	top: -9999px !important;
+   	left: -9999px !important;
+}

@@ -1,0 +1,97 @@
+/*for location of hamburger menu within main menu box*/
+#menuToggle{
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/*for positioning span lines in hamburger menu*/
+span {
+  margin-right: 2em;
+}
+
+/*for text items in hamburger menu*/
+#menuToggle p
+{
+  margin: .5em;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/*for text items in hamburger menu*/
+#menuToggle a:hover {
+  opacity: 0.6;
+}
+
+/*for each line in hamburger menu*/
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  background: white;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 1px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle  .toggled .bar1
+{
+  -webkit-transform: rotate(45deg) translate(0px, 0px);
+          transform: rotate(45deg) translate(0px, 0px);
+}
+
+#menuToggle .toggled .bar3
+{
+  -webkit-transform: rotate(-45deg) translate(0px, 0px);
+          transform: rotate(-45deg) translate(0px, 0px);
+}
+
+/* hide the middle line*/
+#menuToggle .toggled .bar2
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+/*positon of open burgermenu*/
+#menu
+{
+  position: absolute;
+  right: 0;
+  width: 100vw;
+  top: 5vh;
+  background: #c4efe7;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  /* to position menu when open/checked */
+  transform: translate(0, -400px);
+  transition: transform 1s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+/* to animate menu down in open position */
+#menuToggle .toggled ~ ul
+{
+  transform: scale(1.0, 1.0);
+  opacity: 1;
+}
+
+/*hamburger menu items*/
+.offsetItem {
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+#menu  li
+{
+  font-size: 22px;
+}

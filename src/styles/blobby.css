@@ -1,0 +1,15 @@
+.title {
+  color: blue;
+  font-size: 6vw;
+  font-weight: 400;
+  z-index: 1000;
+  position: relative;
+  align-self: center;
+  font-family: "Lato", serif;
+  pointer-events: none;
+}
+
+/*.scene path {
+  fill: url(#pattern);
+}
+*/
