@@ -1,13 +1,12 @@
 import React from 'react'
-import Blobby from '../Blobby'
 require('../styles/about.css')
 
 
 export default function About (props){
 	return(
+
 			<div className="aboutContainer">
 				<h1 className="hide">About</h1>
-{/*
 				<div>
 					<p>
 						Hi I'm Kat, and I'm a Software Developer living in Brooklyn, NY.
@@ -24,11 +23,6 @@ export default function About (props){
 						</a>
 					</p>
 				</div>
-				<img className="bluepaint" src='images/1.png'/>
-*/}
-					<Blobby />
-
-
 			</div>
 	)
 }

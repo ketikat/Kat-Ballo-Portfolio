@@ -1,0 +1,47 @@
+
+.carouselcontent {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  cursor: pointer;
+  border: 0 !important;
+}
+
+.carouselcontent > img {
+  display: none;
+}
+
+.carouselbutton {
+  min-width: 24px;
+  max-width: 50px;
+  /*background: grey;*/
+  position: absolute;
+  bottom: 50px;
+  z-index: 101;
+}
+
+.carouselcontent .carouselbutton {
+  animation: flash 3s ease infinite;
+}
+
+.carouselcontent:hover .carouselbutton {
+  animation: none;
+}
+
+.active {
+  display: block !important;
+}
+
+@keyframes flash {
+  from, 50%, to {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}

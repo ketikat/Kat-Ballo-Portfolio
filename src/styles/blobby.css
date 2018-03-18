@@ -1,15 +1,105 @@
-.title {
-  color: blue;
-  font-size: 6vw;
-  font-weight: 400;
-  z-index: 1000;
-  position: relative;
+#outterText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   align-self: center;
-  font-family: "Lato", serif;
-  pointer-events: none;
+  color: white;
+  font-size: 40px;
+  font-weight: 800;
+  z-index: 3;
+  position: absolute;
+  top: 45vh;
+  left: 30vw;
+  cursor: pointer;
+
+  /*text-shadow: #c4efe7 3px 0 10px;*/
+  /*text-shadow: black 3px 0 20px;*/
+  /*text-align: center;*/
+  /*font-family: "Lato", serif;*/
+
+  text-decoration: none;
+
+/*font-family: 'Varela Round', sans-serif;*/
+/*font-family: 'Catamaran', sans-serif;*/
+/*font-family: 'Source Code Pro', monospace;*/
+font-family: 'Nanum Gothic Coding', monospace;
+/*font-style: bold;*/
+/*font-family: 'Vollkorn', serif;*/
+/*font-family: 'Domine', serif;*/
 }
 
-/*.scene path {
-  fill: url(#pattern);
+#outterText  a {
+  color: #ff6919;
+  font-size: 40px;
+  font-weight: 800;
+  cursor: pointer;
+  opacity: .3;
+  text-decoration: none;
+}
+
+
+#innerText{
+  text-shadow: black 3px 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  color: white;
+  font-size: 40px;
+/*  font-weight: 800;*/
+  z-index: 9999;
+  position: absolute;
+  top: 35vh;
+  left: 30vw;
+  cursor: pointer;
+  opacity: 1;
+
+
+/*font-family: 'Varela Round', sans-serif;*/
+/*font-family: 'Catamaran', sans-serif;*/
+/*font-family: 'Source Code Pro', monospace;*/
+font-family: 'Nanum Gothic Coding', monospace;
+/*font-style: bold;*/
+/*font-family: 'Vollkorn', serif;*/
+/*font-family: 'Domine', serif;*/
+}
+
+
+
+#blobClip{
+  /*width: 100%;*/
+/*  -webkit-transform:scale(.9,.9);
+          transform:scale(.9,.9);*/
+/*     -webkit-transform:scale(.3,.3);
+          transform:scale(.3,.3);*/
+/*box-shadow: inset 50px 50px 50px 50px black;*/
+/*z-index: 1000;*/
+/*filter: drop-shadow(-16px 16px 50px black);*/
+}
+
+#path{
+/*  width: 100%;
+  position:relative;*/
+/*  -webkit-transform:scale(.6,.6);
+          transform:scale(.6,.6);*/
+      /*    -webkit-transform:scale(.3,.3);
+          transform:scale(.3,.3);*/
+}
+
+/*
+#TEST{
+   width: 100%;
+box-shadow: inset 50px 50px 50px 50px black;
 }
 */
+
+
+.shadow {
+  width: 100%;
+  filter: drop-shadow(-16px 16px 50px grey);
+  -webkit-backface-visibility: hidden
+  /*clip-path: url(#blobClip);*/
+ /*box-shadow: inset 50px 50px 50px 50px black;*/
+ /*background-color: black;*/
+ /*filter: contrast(3.3);*/
+}

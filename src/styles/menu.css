@@ -9,7 +9,6 @@
 * {
   margin: 0;
   padding: 0;
-
 }
 
 * a {
@@ -26,12 +25,15 @@
 		width: 100%;
 		display: flex;
 		position: fixed;
-		z-index: 99;
+		z-index: 9999;
 }
 
 .menuItem {
     margin: 2em;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 1em;
+    /*font-family: 'Open Sans Condensed', sans-serif;*/
+
 }
 
 /*hiding the meta data/text*/

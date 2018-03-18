@@ -1,12 +1,11 @@
 import React, {Component} from 'react'
-import {Link} from 'react-router-dom'
 import history from '../history'
 
 require('../styles/gallery.css')
 
 import Grid from '../components/Grid'
 
-class AllProjects extends Component {
+class Work extends Component {
 	constructor(props){
 		super(props)
 		this.state = {
@@ -14,28 +13,32 @@ class AllProjects extends Component {
 		this.handleClick = this.handleClick.bind(this)
 	}
 
-	handleClick(link){
+	handleClick (link){
 		history.push(link)
 	}
 
 	render(){
 		let allProjectsThumbs = []
 
-		let names = ["aged_man", "anime", "bridge", "vulcan_gun", "knightfall", "knights_armor", "mech_suit", "pilot", "skanderbeg", "skull_sermon", "tunnel", "x-men"]
+		let names = ['iloveplant', 'artist_portfolio', 'exquisite_graveyard', 'd-construction']
 
 		for(let i = 0; i < names.length; i++) {
 				allProjectsThumbs.push({
-							url:`../../images/allprojects/${names[i]}.jpg`,
-				      link:`/${names[i]}`
+							url: `../../images/allProj/${names[i]}.png`,
+				      link: `work/${names[i]}`
 				})
 		}
+
 		return (
 					<div className="gallery">
 						<div >
 							<p>text in gallery</p>
 							 <Grid
-							 clickHandler={this.handleClick}
-							 imagesArray={allProjectsThumbs}
+							 	paddingBottom="30%"
+								imgFitting="contain"
+								columns={[1,1,1]}
+							 	clickHandler={this.handleClick}
+							 	imagesArray={allProjectsThumbs}
 							 />
 						</div>
 					</div>
@@ -43,4 +46,4 @@ class AllProjects extends Component {
 	}
 }
 
-export default AllProjects
+export default Work
