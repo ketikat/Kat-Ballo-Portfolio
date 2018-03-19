@@ -31,7 +31,7 @@ export default class Carousel extends Component {
             />
           ))}
           <span className={`carouselbutton${this.props.device}`}>
-            <img fill="green" src={'../../images/right-arrow.svg'} />
+            <img src={'../../images/right-arrow.svg'} />
           </span>
         </a>
       </div>

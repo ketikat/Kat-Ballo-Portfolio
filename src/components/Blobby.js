@@ -8,7 +8,8 @@ require('../styles/blobby.css')
   const lineEq = (y2, y1, x2, x1, currentVal) => {
     const mm = (y2 - y1) / (x2 - x1)
     const bb = y1 - (mm * x1)
-    return (mm * currentVal + bb  ) * .8
+    return (mm * currentVal + bb  )
+    // * .8
     // i add the .8 above
   }
 // ******************************************************************************
@@ -129,6 +130,23 @@ getRandomScale( ){
         aspectRatioY =  1-(WWid/WHei)
       }
 
+//  const tilt = {
+//         tx: anime.random(5,40),
+//         ty: anime.random(20,60),
+//         rz: anime.random(-10,10),
+//         sx: [0.8, 2],
+//         sy: [0.8, 2]
+// }
+
+    // const tilt = {
+    //   tx: aspectRatioX,
+    //   ty: aspectRatioY,
+    //   rz: 45,
+    //   sx: [0.8, 2],
+    //   sy: [0.8, 2]
+    // }
+
+
     const tilt = {
       tx: WWid,
       ty: WHei,
@@ -151,7 +169,8 @@ getRandomScale( ){
         else {
           const mousepos = this.getMousePos(ev)
 
-          const rotZ = 2 * tilt.rz / WHei * mousepos.y - tilt.rz
+          // const rotZ = 2 * tilt.rz / WHei * mousepos.y - tilt.rz
+          const rotZ = 2*tilt.rz/WWid*mousepos.x - tilt.rz
 
           const scaleX = mousepos.x < WWid / 2
             ?
@@ -178,7 +197,9 @@ getRandomScale( ){
 
               // this.refs.morph2.style.transform = `translate3d(${transX}px,${transY}px,0) rotate3d(0,0,1,${rotZ}deg) scale3d(${(scaleX)},${(scaleY)},1)`
 
-           this.refs.morph2.style.transform = `translate3d(${transX}px,${transY}px,0) rotate3d(0,0,1,${rotZ}deg) scale3d(${scaleX},${scaleY},1)`
+this.refs.morph2.style.transform = `translateX(${transX}px) translateY(${transY}px) rotate(${rotZ}deg) scale3d(${scaleX},${scaleY},1)`
+
+           // this.refs.morph2.style.transform = `translate3d(${transX}px,${transY}px,0) rotate3d(0,0,1,${rotZ}deg) scale3d(${scaleX},${scaleY},1)`
         }
     })
   }

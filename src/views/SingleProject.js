@@ -75,7 +75,7 @@ export default class SingleProject extends Component {
 			      )
 				break
 
-				case 'd-construction':
+				case 'd_construction':
 						desktopImageNum = 1
 						mobileImageNum = 1
 						projectName=  'D-Construction'

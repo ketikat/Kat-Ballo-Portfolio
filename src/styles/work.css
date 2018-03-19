@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { height:100%; }
+/*
+div {
+    display: -webkit-flex;
+   -webkit-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    -moz-
+}
+*/
+
+.outterWorkContainer {
+  position: fixed;
+  top: 10vh;
+  height:90%;
+  }
+.workContainer {
+  position: fixed;
+  top: 10vh;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: baseline;
+  align-content: center;
+  /*justify-content: center;*/
+    justify-content: space-around;
+    margin: 0 auto;
+/*  background-color:#c8ebf7;*/
+  background-color:#b7e8e8;
+  text-align: center;
+}
+
+
+@media (max-width: 500px) {
+  .workContainer {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin: 0 auto;
+    background-color:#c8ebf7;
+    text-align: center;
+  }
+}
+
+
+/*
+    clip-path: url(#litteMorphClip2);
+    -webkit-clip-path: url(#litteMorphClip2);
+    -webkit-transform-style: preserve-3d;
+*/
+
+
+.projTitle{
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.5em;
+  font-weight: 400px;
+/*  color: #f4cbb5;*/
+  color: white;
+  text-shadow: 2px 2px 6px #f4cbb5;
+    /*color: black;*/
+  margin: auto;
+  position: relative;
+  top: -1.5em;
+  /*text-shadow: 3px;*/
+}
+
+#iloveplant{
+  position: relative;
+  width:40%;
+  top: 1.5em;
+}
+
+#exquisite_graveyard{
+  width: 40%;
+  position: relative;
+  top: 1.5em;
+}
+
+#artist_portfolio{
+  position: relative;
+  width: 45%;
+  top: -1em;
+}
+
+#d_construction{
+  width: 45%;
+  position: relative;
+  top: -1em;
+}
+
+
+
+
+
+
