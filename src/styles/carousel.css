@@ -2,7 +2,7 @@
 .carouselcontent {
   position: relative;
   margin: 0 auto;
-  overflow: hidden;
+  /*overflow: hidden;*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,14 +15,24 @@
   display: none;
 }
 
-.carouselbutton {
+.carouselbuttonmacbook{
   min-width: 24px;
-  max-width: 50px;
-  /*background: grey;*/
+  max-width: 30px;
+  background: grey;
   position: absolute;
-  bottom: 50px;
-  z-index: 101;
+  bottom: 8em;
+  z-index: 999;
 }
+
+.carouselbuttoniphone {
+  min-width: 24px;
+  max-width: 30px;
+  background: grey;
+  position: absolute;
+  bottom: 6em;
+  z-index: 999;
+}
+
 
 .carouselcontent .carouselbutton {
   animation: flash 3s ease infinite;
@@ -45,3 +55,22 @@
     opacity: 0;
   }
 }
+
+
+
+@media (max-width: 640px) {
+
+.carouselbuttonmacbook {
+   position: absolute;
+    bottom: 3em;
+  }
+
+  .carouselbuttoniphone {
+     position: absolute;
+    bottom: 6em;
+  }
+
+}
+
+
+

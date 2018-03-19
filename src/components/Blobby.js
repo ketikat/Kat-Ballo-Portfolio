@@ -214,7 +214,7 @@ getRandomScale( ){
               <div id="outterText">
                   <Link to="/work">
                     <p>
-                    Hi I'm Kat, and I'm a <br/>Software Developer!
+                    Hi I'm Kat, and I'm a<br/> Software Developer.
                     </p>
                   </Link>
               </div>
@@ -224,7 +224,8 @@ getRandomScale( ){
 
                <div id="innerText">
                   <p>
-                    Hi I'm Kat, and I'm a <br/>Software Developer!
+{/*    HI, I'M KAT, AND I'M A <br/>SOFTWARE DEVELOPER.  */}
+                   Hi I'm Kat, and I'm a<br/> Software Developer.
                   </p>
                 </div>
 

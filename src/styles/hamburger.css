@@ -15,23 +15,17 @@ span {
 
 
 /*for text items in hamburger menu*/
-#websiteLinks{
-/*  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-*/}
 
 #websiteLinks p{
-  /*margin-bottom: 2em;*/
-
-  font-family: 'Nanum Gothic Coding', monospace;
+  font-family: 'Varela Round', sans-serif;
   font-size: 30px;
+  margin-bottom: .5em;
 }
 
 #projectLinks p{
   margin-bottom: 1em;
-  margin-left: 4em;
-  font-family: 'Open Sans Condensed', sans-serif;
+  margin-left: 3em;
+  font-family: 'Source Code Pro', monospace;
   font-size: 15px;
 }
 

@@ -1,6 +1,5 @@
 import React from 'react'
-require('../styles/about.css')
-
+require('../styles/aboutContact.css')
 
 export default function About (props){
 	return(
@@ -11,11 +10,11 @@ export default function About (props){
 					<p>
 						Hi I'm Kat, and I'm a Software Developer living in Brooklyn, NY.
 					</p>
-
+					<br/>
 					<p>
 						I like using Javascript(ES6), React, Redux, Node.js, Express, Firebase, Git, PostgreSQL, WebSockets, HTML, CSS, and Bootstrap.
 					</p>
-
+					<br/>
 					<p>
 						Please get in touch if you'd like to work on something together &nbsp;
 						<a href="mailto:katballo@gmail.com">

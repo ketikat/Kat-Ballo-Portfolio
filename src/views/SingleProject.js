@@ -10,19 +10,23 @@ export default class SingleProject extends Component {
 		this.state = {
 			projectName: "",
  			mobileImageNum: 0,
- 			desktopImageNum: 0
+ 			desktopImageNum: 0,
+ 			link: "",
+ 			code: ""
     }
 	}
 
 	 componentDidMount(){
 		const title = this.props.title
-		let projectName, mobileImageNum, desktopImageNum, text
+		let projectName, mobileImageNum, desktopImageNum, text, link, code
 
 		switch (title) {
 				case 'iloveplant':
-				  	desktopImageNum= 1,
-				 		mobileImageNum= 4,
+				  	desktopImageNum= 1
+				 		mobileImageNum= 4
 				 		projectName='I Love Plant'
+				 		link="http://iloveplant.herokuapp.com/"
+				 		code="https://github.com/ketikat/iloveplant"
 						text = (
 							<span>
 									<p>
@@ -36,9 +40,11 @@ export default class SingleProject extends Component {
 					break
 
 				case 'artist_portfolio':
-				 		desktopImageNum=3,
-				 		mobileImageNum=4,
+				 		desktopImageNum=3
+				 		mobileImageNum=4
 				 		projectName='Artist Portfolio'
+				 		link="http://www.aleksanderballo.com/"
+				 		code="https://github.com/ketikat/alexWebPortfolio"
 						text = (
 							<span>
 									<p>
@@ -52,9 +58,11 @@ export default class SingleProject extends Component {
 				break
 
 				case 'exquisite_graveyard':
-						desktopImageNum= 1,
-						mobileImageNum= 1,
+						desktopImageNum= 1
+						mobileImageNum= 1
 						projectName='Exquisite Graveyard'
+						link="https://exquisitegraveyard.com/"
+				 		code="https://github.com/exquisite-corpse/excorp"
 						text = (
 							<span>
 								<p>
@@ -68,9 +76,11 @@ export default class SingleProject extends Component {
 				break
 
 				case 'd-construction':
-						desktopImageNum = 1,
-						mobileImageNum = 1,
+						desktopImageNum = 1
+						mobileImageNum = 1
 						projectName=  'D-Construction'
+						link="https://d-cnstrxn.com"
+				 		code="https://github.com/ketikat/CNSTRXN-PAPER"
 						text = (
 							<span>
 								<p>
@@ -92,7 +102,9 @@ export default class SingleProject extends Component {
 				desktopImageNum: desktopImageNum,
 				mobileImageNum: mobileImageNum,
 				projectName: projectName,
-				text: text
+				text: text,
+				link: link,
+				code: code
 			})
 
 
@@ -122,24 +134,40 @@ export default class SingleProject extends Component {
 		return (
 			<div className="singleproject">
 
-				<p id="projectTitle">{this.state.projectName}</p>
+			<p id="projectTitle">{this.state.projectName}</p>
 
 			<div className="firstRow">
 					<div className="iphonecontainer">
 						<img  id="iphone" src="../../images/iphoneframe.png"/>
 						<div className="iphonecontent">
-							<Carousel images={mobileImages} />
+							<Carousel device="iphone" images={mobileImages} />
 						</div>
 					</div>
+
 				<div id="description">
 					{this.state.text}
+
+				<span id="projLinks">
+
+					<a href={this.state.link}>
+            <i className="fa fa-external-link" aria-hidden="true"></i>
+            <p>{this.state.link}</p>
+          </a>
+
+          <a href={this.state.link}>
+            <i className="fa fa-code" aria-hidden="true"></i>
+            <p>{this.state.code}</p>
+          </a>
+
+			</span>
+
 				</div>
 			</div>
 
 			<div className="macbookcontainer">
 				<img  id="macbook" src="../../images/macbookframe.png"/>
 				<div className="macbookcontent">
-					<Carousel images={desktopImages} />
+					<Carousel device="macbook" images={desktopImages} />
 				</div>
 			</div>
 

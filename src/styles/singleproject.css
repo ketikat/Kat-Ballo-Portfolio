@@ -23,7 +23,7 @@ img {
 }
 
 p{
-  font-family: 'Nanum Gothic Coding', monospace;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /*styles for CONTAINERS::::::::*/
@@ -37,18 +37,51 @@ p{
   margin: 0 auto;
 }
 
+
 #description{
-  position: relative;
-  right: 10em;
-  /*margin-right: 6em;*/
-  width: 50%;
+  margin: 2em;
+  padding-right: 4em;
+  width: 60%;
+}
+
+#description p{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#projLinks p{
+font-family: 'Source Code Pro', monospace;
+}
+
+
+/*#projLinks{
+  display: flex;
+}*/
+
+#projLinks a{
+  display: flex;
+  margin: 1em;
+}
+#projLinks i{
+  margin-right: 1em;
+}
+#projLinks p{
+  font-size: 12px;
+  color: #7dcebf;
+}
+
+
+
+#projectTitle{
+  margin: 2em;
+  font-size: 2em;
+font-family: 'Varela Round', sans-serif;
 }
 
 .firstRow{
   position: relative;
   display: flex;
   justify-content: center;
-  width: 100% ;
+  width: 100%;
 }
 
 /*styles for macbook::::::::*/
@@ -78,11 +111,12 @@ p{
   display: flex;
   flex-direction: column;
   margin-left: 6em;
+  width: 25%;
+  min-width: 200px;
 }
 
 #iphone {
   position: relative;
-  max-width: 40%;
   z-index: 99;
   background-color: #11ffee00;
   pointer-events: none;
@@ -91,7 +125,39 @@ p{
 .iphonecontent{
   position: absolute;
   z-index: 98;
-  max-width: 40%;
   overflow: hidden;
 }
 
+@media (max-width: 640px) {
+
+  .iphonecontainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .firstRow{
+    position: relative;
+    display: flex;
+    /*flex-direction: column-reverse;*/
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #description{
+    margin: 0 auto;
+    width: 80%;
+    padding-left: 2em;
+    text-align: justify-all;
+  }
+
+
+  #projectTitle{
+  margin: 1em;
+  font-size: 1.5em;
+}
+
+}
