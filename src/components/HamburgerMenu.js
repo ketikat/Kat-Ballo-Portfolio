@@ -14,19 +14,16 @@ export default class Hamburger extends Component {
      this.burgerClicked = this.burgerClicked.bind(this)
   }
 
- 	projectsClicked(e){
+ 	projectsClicked(){
  		this.setState({isProjectsClicked: !this.state.isProjectsClicked})
  	}
 
- 	burgerClicked(e){
+ 	burgerClicked(){
  		this.setState({isBurgerClicked: !this.state.isBurgerClicked})
  	}
 
-
   render() {
-
   	let toggled= this.state.isBurgerClicked? 'toggled' : 'nope'
-
 
   	return (
 			  <nav>
@@ -39,13 +36,15 @@ export default class Hamburger extends Component {
 					  </div>
 
 				    	<ul id="menu" className={toggled}>
-						    <div>
-									<h1 className="hide">Kat Ballo - Software Engineer Portfolio</h1>
-								</div>
 
               <div id="websiteLinks">
+								<br/>
                 <br/>
-								<p onClick={this.burgerClicked}><Link to="/work">work</Link></p>
+
+                <p onClick={this.burgerClicked}><Link to="/">home</Link></p>
+                <br/>
+                <p onClick={this.burgerClicked}><Link to="/work">work</Link></p>
+
                  <div id="projectLinks">
                  <br/>
                     <p onClick={this.burgerClicked} className="offsetItem"><Link to="/work/exquisite_graveyard">Exquisite Graveyard</Link></p>

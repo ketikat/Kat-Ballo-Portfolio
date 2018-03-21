@@ -3,6 +3,8 @@ import anime from 'animejs'
 import {Link} from "react-router-dom"
 require('../styles/blobby.css')
 
+// **************************** BOLB MORPH ADAPTED FROM CODROPS **************************************************
+
 // **************************** helper function **************************************************
 // equation of a line
   const lineEq = (y2, y1, x2, x1, currentVal) => {
@@ -14,7 +16,8 @@ require('../styles/blobby.css')
   }
 // ******************************************************************************
 
-class Blobby extends Component {
+
+export default class Blobby extends Component {
 
   constructor(props){
     super(props)
@@ -68,9 +71,6 @@ class Blobby extends Component {
           // scale: .5
         })
   }
-
-
-
 
   getMousePos(evt) {
     let CLIENTX
@@ -130,13 +130,14 @@ getRandomScale( ){
         aspectRatioY =  1-(WWid/WHei)
       }
 
-//  const tilt = {
-//         tx: anime.random(5,40),
-//         ty: anime.random(20,60),
-//         rz: anime.random(-10,10),
-//         sx: [0.8, 2],
-//         sy: [0.8, 2]
-// }
+    // experimenting with the TILT
+    // const tilt = {
+    //         tx: anime.random(5,40),
+    //         ty: anime.random(20,60),
+    //         rz: anime.random(-10,10),
+    //         sx: [0.8, 2],
+    //         sy: [0.8, 2]
+    // }
 
     // const tilt = {
     //   tx: aspectRatioX,
@@ -187,32 +188,25 @@ getRandomScale( ){
           let transX =  2* tilt.tx / WWid * mousepos.x - tilt.tx
           let transY =  2* tilt.ty / WHei * mousepos.y - tilt.ty
 
+      // EXPERIMENTING WITH FORMULA
               // this.refs.morph2.style.transform = `translate3d(${transX}px, ${transY}px,0) scale3d(${scaleX*.5},${scaleY*.5},1) rotate3d(0,0,1,${rotZ}deg)`
-
               // this.refs.morph2.style.transform = `translate3d(${transX}px, ${transY}px,this.getRandomScale() ) scale(${this.getRandomScale()}) rotate3d(0,0,1,${rotZ}deg)`
-
               // this.refs.morph2.style.transform = `translate3d(${transX}px,${transY}px,0) rotate3d(${transX},${transY},1,${rotZ}deg) `
-
               // this.refs.morph2.style.transform = `translate3d(${transX}px, ${transY}px,0) rotate3d(0,0,1,${rotZ}deg) scale3d(${scaleX*.8},${scaleY*.8},1)`
-
               // this.refs.morph2.style.transform = `translate3d(${transX}px,${transY}px,0) rotate3d(0,0,1,${rotZ}deg) scale3d(${(scaleX)},${(scaleY)},1)`
 
-this.refs.morph2.style.transform = `translateX(${transX}px) translateY(${transY}px) rotate(${rotZ}deg) scale3d(${scaleX},${scaleY},1)`
+            this.refs.morph2.style.transform = `translateX(${transX}px) translateY(${transY}px) rotate(${rotZ}deg) scale3d(${scaleX},${scaleY},1)`
 
+      // OG FORMULA
            // this.refs.morph2.style.transform = `translate3d(${transX}px,${transY}px,0) rotate3d(0,0,1,${rotZ}deg) scale3d(${scaleX},${scaleY},1)`
         }
     })
   }
 
-
-
   render() {
-
-
   const styles = {
     // backgroundImage: "url(/images/ME.jpg)",
     // backgroundImage: "url(/images/GOWANUS.jpg)",
-    // filter: "grayscale(100%)",
     backgroundImage: "url(/images/kbride.gif), url(/images/kbbeermovie.gif)",
     backgroundRepeat:"no-repeat",
     clipPath: 'url(#blobClip)',
@@ -233,20 +227,19 @@ this.refs.morph2.style.transform = `translateX(${transX}px) translateY(${transY}
             >
 
               <div id="outterText">
+               <p>
                   <Link to="/work">
-                    <p>
-                    Hi I'm Kat, and I'm a<br/> Software Developer.
-                    </p>
+                  Hi I'm Kat, and I'm a<br/> Software Developer.
                   </Link>
+                </p>
               </div>
 
             <div className="shadow">
               <div id="inner" style={styles}>
 
-               <div id="innerText">
+                <div id="innerText">
                   <p>
-{/*    HI, I'M KAT, AND I'M A <br/>SOFTWARE DEVELOPER.  */}
-                   Hi I'm Kat, and I'm a<br/> Software Developer.
+                  Hi I'm Kat, and I'm a<br/> Software Developer.
                   </p>
                 </div>
 
@@ -285,4 +278,3 @@ this.refs.morph2.style.transform = `translateX(${transX}px) translateY(${transY}
   }
 }
 
-export default Blobby

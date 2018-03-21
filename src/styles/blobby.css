@@ -3,9 +3,7 @@
   align-items: center;
   justify-content: center;
   align-self: center;
-  color: white;
   font-size: 40px;
-  /*font-weight: 800;*/
   z-index: 3;
   position: absolute;
   top: 45vh;
@@ -13,43 +11,31 @@
   cursor: pointer;
   text-decoration: none;
 }
-
-
-#outterText p{
-font-family: 'IBM Plex Sans Condensed', sans-serif;
-}
-#innerText p{
-font-family: 'IBM Plex Sans Condensed', sans-serif;
-
-}
-
-
-/*
-font-family: 'Nanum Gothic Coding', monospace;
-
-font-family: 'Nixie One', cursive;
-font-family: 'Londrina Outline', cursive;
-font-family: 'Slabo 27px', serif;
-font-family: 'IBM Plex Sans Condensed', sans-serif;
-*/
-/*font-family: 'Source Sans Pro', sans-serif;
-/*font-family: 'Varela Round', sans-serif;*/
-/*font-family: 'Vollkorn', serif;*/
-
-
-
 #outterText  a {
   color: #ff6919;
   font-size: 40px;
-  font-weight: 800;
   cursor: pointer;
   opacity: .3;
   text-decoration: none;
 }
 
+#outterText p{
+font-family: 'Varela Round', sans-serif;
+}
+#innerText p{
+font-family: 'Varela Round', sans-serif;
+}
+/*font-family: 'Nanum Gothic Coding', monospace;
+font-family: 'Nixie One', cursive;
+font-family: 'Londrina Outline', cursive;
+font-family: 'Slabo 27px', serif;
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Varela Round', sans-serif;
+font-family: 'Vollkorn', serif;*/
 
 #innerText{
-  text-shadow: black 3px 0 20px;
+  text-shadow: black 5px 0 20px;
   display: flex;
   align-items: center;
   justify-content: center;

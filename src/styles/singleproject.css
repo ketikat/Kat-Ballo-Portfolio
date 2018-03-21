@@ -52,11 +52,6 @@ p{
 font-family: 'Source Code Pro', monospace;
 }
 
-
-/*#projLinks{
-  display: flex;
-}*/
-
 #projLinks a{
   display: flex;
   margin: 1em;
@@ -69,12 +64,11 @@ font-family: 'Source Code Pro', monospace;
   color: #7dcebf;
 }
 
-
-
 #projectTitle{
-  margin: 2em;
+  margin-top: 1em;
+  margin-bottom: .5em;
   font-size: 2em;
-font-family: 'Varela Round', sans-serif;
+  font-family: 'Varela Round', sans-serif;
 }
 
 .firstRow{
@@ -129,7 +123,6 @@ font-family: 'Varela Round', sans-serif;
 }
 
 @media (max-width: 640px) {
-
   .iphonecontainer{
     position: relative;
     display: flex;
@@ -141,7 +134,6 @@ font-family: 'Varela Round', sans-serif;
   .firstRow{
     position: relative;
     display: flex;
-    /*flex-direction: column-reverse;*/
     flex-direction: column;
     justify-content: center;
     width: 100%;
@@ -154,10 +146,9 @@ font-family: 'Varela Round', sans-serif;
     text-align: justify-all;
   }
 
-
   #projectTitle{
-  margin: 1em;
-  font-size: 1.5em;
-}
+    margin: 1em;
+    font-size: 1.5em;
+  }
 
 }

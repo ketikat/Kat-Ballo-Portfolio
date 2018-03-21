@@ -1,26 +1,22 @@
-import React, {Component} from 'react'
-import {Link, Redirect, withRouter} from 'react-router-dom'
+import React from 'react'
+import {Link} from 'react-router-dom'
 import HamburgerMenu from './HamburgerMenu'
 require('../styles/menu.css')
 
 
-class TopMenu extends Component {
-
-	constructor(props){
-    super(props)
-
-  }
-
-  render() {
+export default function TopMenu (props) {
   	return (
             <div className="topMenu">
-							<p  className="menuItem"><Link to="/">Kat Ballo</Link><i className="fa fa-hand-peace-o" aria-hidden="true"></i></p>
+							<Link to="/">
+                <p className="menuItem">Kat Ballo <i className="fa fa-hand-peace-o"  color="white" aria-hidden="true"></i>
+                </p>
+              </Link>
               <HamburgerMenu />
 						</div>
     )
-  }
 }
-export default TopMenu
+
+
 
 
 

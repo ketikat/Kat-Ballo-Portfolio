@@ -2,13 +2,13 @@
 .carouselcontent {
   position: relative;
   margin: 0 auto;
-  /*overflow: hidden;*/
   display: flex;
   align-items: center;
   justify-content: center;
   user-select: none;
   cursor: pointer;
   border: 0 !important;
+  overflow: hidden;
 }
 
 .carouselcontent > img {
@@ -33,43 +33,46 @@
   z-index: 999;
 }
 
-
-.carouselcontent .carouselbutton {
-  animation: flash 3s ease infinite;
+.carouselbuttoniphone img, .carouselbuttonmacbook img{
+  -webkit-animation: flash 3s ease infinite;
+     -moz-animation: flash 3s ease infinite;
+          animation: flash 3s ease infinite;
 }
 
-.carouselcontent:hover .carouselbutton {
-  animation: none;
+.carouselcontent:hover img {
+  -webkit-animation: none;
+     -moz-animation: none;
+          animation: none;
 }
 
 .active {
   display: block !important;
 }
 
-@keyframes flash {
-  from, 50%, to {
-    opacity: 1;
-  }
-
-  25%, 75% {
-    opacity: 0;
-  }
+@-webkit-keyframes flash {
+  0% { opacity: 0; }
+  25% { opacity: 1; }
+  50% { opacity: 0; }
+  75% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
-
+@keyframes flash {
+  25% { opacity: 1; }
+  50% { opacity: 0; }
+  75% { opacity: 1; }
+  100% { opacity: 0; }
+}
 
 @media (max-width: 640px) {
-
-.carouselbuttonmacbook {
-   position: absolute;
+  .carouselbuttonmacbook {
+    position: absolute;
     bottom: 3em;
   }
-
   .carouselbuttoniphone {
-     position: absolute;
+    position: absolute;
     bottom: 6em;
   }
-
 }
 
 

@@ -5,7 +5,6 @@
   -webkit-user-select: none;
   user-select: none;
   margin-left: 3em;
-
 }
 
 /*for positioning span lines in hamburger menu*/
@@ -15,7 +14,6 @@ span {
 
 
 /*for text items in hamburger menu*/
-
 #websiteLinks p{
   font-family: 'Varela Round', sans-serif;
   font-size: 30px;
@@ -28,7 +26,6 @@ span {
   font-family: 'Source Code Pro', monospace;
   font-size: 15px;
 }
-
 
 /*for text items in hamburger menu*/
 #menuToggle a:hover {
@@ -47,6 +44,10 @@ span {
   background: white;
   border-radius: 3px;
   z-index: 1;
+  -webkit-transform-origin: 4px 1px;
+  -webkit-transition: transform 0.35s cubic-bezier(0.77,0.2,0.05,1.0),
+                      background 0.35s cubic-bezier(0.77,0.2,0.05,1.0),
+                      opacity 0.55s ease;
   transform-origin: 4px 1px;
   transition: transform 0.35s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.35s cubic-bezier(0.77,0.2,0.05,1.0),
@@ -69,7 +70,8 @@ span {
 #menuToggle .toggled .bar2
 {
   opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
 }
 
 
@@ -84,18 +86,24 @@ span {
   height: 95vh;
   background: #c4efe7;
   list-style-type: none;
+    /* to stop flickering of text in safari */
   -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  transform-origin: 0% 0%;
+    /* */
+
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
   /* to position menu when open/checked */
-  transform: translate(0, -110vh);
-  transition: transform 1s cubic-bezier(0.77,0.2,0.05,1.0);
+  -webkit-transform: translate(0, -110vh);
+          transform: translate(0, -110vh);
+  -webkit-transition: transform 1s cubic-bezier(0.77,0.2,0.05,1.0);
+          transition: transform 1s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 /* to animate menu down in open position */
 #menuToggle .toggled ~ ul
 {
-  transform: scale(1.0, 1.0);
+  -webkit-transform: scale(1.0, 1.0);
+          transform: scale(1.0, 1.0);
   opacity: 1;
 }
 

@@ -4,7 +4,7 @@ import Blobby from '../components/Blobby'
 export default function Home (props){
 	return(
 			<div  className="homeContainer">
-					<Blobby style={{display:"flex", justifyContent:"center", }} id="blobby"/>
+					<Blobby style={{display:"flex", justifyContent:"center", position: "fixed" }} id="blobby"/>
 			</div>
 	)
 }

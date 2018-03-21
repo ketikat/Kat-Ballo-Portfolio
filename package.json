@@ -1,6 +1,6 @@
 {
   "name": "Kat_Ballo",
-  "description": "Kat Ballo - Portfolio",
+  "description": "Kat Ballo - Dev Portfolio",
   "author": "kat ballo",
   "license": "ISC",
   "main": "server.js",
@@ -9,7 +9,7 @@
     "start": "node server.js",
     "start-dev": "webpack -w & nodemon server.js"
   },
-  "homepage": "https://www.kat-ballo.com",
+  "homepage": "https://katballo.com",
   "dependencies": {
     "anime": "^0.1.2",
     "css-loader": "^0.28.9",
