@@ -206,8 +206,11 @@ getRandomScale( ){
   render() {
   const styles = {
     // backgroundImage: "url(/images/ME.jpg)",
+    // backgroundImage: "url(/images/BKBRIDGE.jpg)",
+        backgroundImage: "url(/images/wood.jpg)",
+         // backgroundImage: "url(/images/LA2.jpg)",
     // backgroundImage: "url(/images/GOWANUS.jpg)",
-    backgroundImage: "url(/images/kbride.gif), url(/images/kbbeermovie.gif)",
+    // backgroundImage: "url(/images/kbride.gif), url(/images/kbbeermovie.gif)",
     backgroundRepeat:"no-repeat",
     clipPath: 'url(#blobClip)',
     WebkitClipPath: 'url(#blobClip)',
@@ -217,6 +220,8 @@ getRandomScale( ){
     height: "90vh",
     opacity: "0.8",
     WebkitTransformStyle: "preserve-3d",
+    WebkitBackfaceVisibility: "hidden",
+    overflow: "hidden"
   }
 
     return (
@@ -258,7 +263,7 @@ getRandomScale( ){
                       ref="morph2"
                       id="blobClip"
                       clipPathUnits="objectBoundingBox"
-                      style={{transformOrigin:"center"}}
+                      style={{transformOrigin:"center", WebkitBackfaceVisibility: "hidden"}}
 
                     >
                       <path

@@ -1,3 +1,7 @@
+/*#inner {
+  position: fixed;
+}
+*/
 #outterText {
   display: flex;
   align-items: center;
