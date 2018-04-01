@@ -22,7 +22,7 @@ export default class SingleProject extends Component {
 
 		switch (title) {
 				case 'iloveplant':
-				  	desktopImageNum= 1
+				  	desktopImageNum= 8
 				 		mobileImageNum= 4
 				 		projectName='I Love Plant'
 				 		link="http://iloveplant.herokuapp.com/"
@@ -40,7 +40,7 @@ export default class SingleProject extends Component {
 					break
 
 				case 'artist_portfolio':
-				 		desktopImageNum=3
+				 		desktopImageNum=4
 				 		mobileImageNum=4
 				 		projectName='Artist Portfolio'
 				 		link="http://www.aleksanderballo.com/"
@@ -58,8 +58,8 @@ export default class SingleProject extends Component {
 				break
 
 				case 'exquisite_graveyard':
-						desktopImageNum= 1
-						mobileImageNum= 1
+						desktopImageNum= 7
+						mobileImageNum= 7
 						projectName='Exquisite Graveyard'
 						link="https://exquisitegraveyard.com/"
 				 		code="https://github.com/exquisite-corpse/excorp"
@@ -76,8 +76,8 @@ export default class SingleProject extends Component {
 				break
 
 				case 'd_construction':
-						desktopImageNum = 1
-						mobileImageNum = 1
+						desktopImageNum = 3
+						mobileImageNum = 4
 						projectName=  'D-Construction'
 						link="https://d-cnstrxn.com"
 				 		code="https://github.com/ketikat/CNSTRXN-PAPER"

@@ -14,12 +14,12 @@ app.use(morgan('dev'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 // static middleware so your browser can request things like your 'bundle.js'
-app.use(express.static(path.join(__dirname, './public')))
+app.use(express.static(path.join(__dirname, 'public')))
 
 
 // Send index.html for any other requests
 app.use('*', (req, res) => {
-  res.sendFile(path.join(__dirname, './public/index.html'))
+  res.sendFile(path.join(__dirname, 'public',  'index.html'))
 })
 
 //error handling middleware
@@ -37,3 +37,26 @@ app.listen(PORT, (err) => {
 })
 
 module.exports = app
+
+
+
+
+  // // static file-serving middleware
+  // app.use(express.static(path.join(__dirname, '..', 'public')))
+
+
+  // // any remaining requests with an extension (.js, .css, etc.) send 404
+  // app.use((req, res, next) => {
+  //   if (path.extname(req.path).length) {
+  //     const err = new Error('Not found')
+  //     err.status = 404
+  //     next(err)
+  //   } else {
+  //     next()
+  //   }
+  // })
+
+  // // sends index.html
+  // app.use('*', (req, res) => {
+  //   res.sendFile(path.join(__dirname, '..', 'public/index.html'))
+  // })

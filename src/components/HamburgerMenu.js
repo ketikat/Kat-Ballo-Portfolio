@@ -49,7 +49,7 @@ export default class Hamburger extends Component {
                  <br/>
                     <p onClick={this.burgerClicked} className="offsetItem"><Link to="/work/exquisite_graveyard">Exquisite Graveyard</Link></p>
                     <p onClick={this.burgerClicked} className="offsetItem"><Link to="/work/iloveplant">I Love Plant</Link></p>
-                    <p onClick={this.burgerClicked} className="offsetItem"><Link to="/work/d-construction">D-Construction</Link></p>
+                    <p onClick={this.burgerClicked} className="offsetItem"><Link to="/work/d_construction">D-Construction</Link></p>
                     <p onClick={this.burgerClicked} className="offsetItem"><Link to="/work/artist_portfolio">Character Artist Portfolio</Link></p>
                   </div>
                   <br/>
