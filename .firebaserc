@@ -1,5 +1,6 @@
 {
   "projects": {
-    "website": "kat-ballo"
+    "website": "kat-ballo",
+    "default": "kat-ballo"
   }
 }
