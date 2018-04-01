@@ -20,3 +20,10 @@
     opacity: 0.01;
     transition: opacity 800ms ease-out;
 }
+
+img {
+-webkit-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;
+}

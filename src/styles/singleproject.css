@@ -33,6 +33,7 @@ p{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 80%;
   margin: 0 auto;
 }
@@ -62,7 +63,6 @@ font-family: 'Source Code Pro', monospace;
 #projLinks p{
   font-size: 12px;
   color: #7dcebf;
-  /*overflow-wrap: break-word;*/
   word-break: break-word;
 }
 
@@ -80,6 +80,14 @@ font-family: 'Source Code Pro', monospace;
   width: 100%;
 }
 
+.secondRow{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
 /*styles for macbook::::::::*/
 .macbookcontainer{
   position: relative;
@@ -88,7 +96,10 @@ font-family: 'Source Code Pro', monospace;
   align-items: center;
   justify-content: center;
   width: 100%;
+  min-width: 100%;
   margin-bottom: 2em;
+  vertical-align: baseline;
+
 }
 #macbook {
   position: relative;
@@ -98,7 +109,10 @@ font-family: 'Source Code Pro', monospace;
 }
 .macbookcontent {
   position: absolute;
-   z-index: 98;
+  z-index: 98;
+  overflow: hidden;
+  height: 100%;
+  width:100%;
 }
 
 /*styles for iphone::::::::*/
@@ -109,6 +123,7 @@ font-family: 'Source Code Pro', monospace;
   margin-left: 6em;
   width: 25%;
   min-width: 200px;
+  vertical-align: baseline;
 }
 
 #iphone {
@@ -142,12 +157,25 @@ font-family: 'Source Code Pro', monospace;
   }
 
   #description{
-    margin: 0 auto;
+    margin-left: 0;
+    margin-right: 0;
     width: 80%;
     padding-right: 0em;
-    padding-left: 2em;
+    padding-left: 0em;
     text-align: justify;
     text-justify: inter-word;
+
+    /*margin: 0 auto;*/
+    /*width: 80%;*/
+/*    display: flex;
+    justify-content: center;
+    margin-left: 0em;
+    margin-right: 0em;
+    padding-right: 0em;
+    padding-left: 0em;
+    width: 80%;
+    text-align: justify;
+    text-justify: inter-word;*/
   }
 
   #projectTitle{
@@ -156,3 +184,4 @@ font-family: 'Source Code Pro', monospace;
   }
 
 }
+

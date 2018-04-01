@@ -39,7 +39,7 @@ export default function About (props){
 					<br/>
 					<br/>
 					<h4>3D</h4>
-					<p>Rhino, Autocad, Sketchup</p>
+					<p>Rhino, Autocad, Revti, Sketchup</p>
 				</div>
 
 			</div>

@@ -20,7 +20,7 @@ export default class Carousel extends Component {
   render() {
 
     return (
-      <div >
+      <div className="carouselcontent-container">
         <a className="carouselcontent" onClick={this.changeSlide} tabIndex={-1} >
           {this.props.images.map((image, index) => (
             <img

@@ -9,8 +9,8 @@ export default class SingleProject extends Component {
 		super(props)
 		this.state = {
 			projectName: "",
- 			mobileImageNum: 0,
- 			desktopImageNum: 0,
+ 			mobileImageNum: 1,
+ 			desktopImageNum: 1,
  			link: "",
  			code: ""
     }
@@ -30,10 +30,10 @@ export default class SingleProject extends Component {
 						text = (
 							<span>
 									<p>
-								An e-commerce plant store selling...plants! Includes client as well as Admin site.
+								An e-commerce plant store selling...plants! Includes client as well as Admin sites.
 								<br/>
 								<br/>
-								Built as part of a four person team of developers in a one week sprint with Node.js, Express.js, Sequelize, React-Redux, Heroku, Bootstrap, Mocha, and Chai.
+								Built as part of a four person team of developers in a one week sprint with Node.js, Express.js, Sequelize, React-Redux, Bootstrap, Mocha, and Chai, and hosted with Heroku.
 								</p>
 		      		</span>
 		      	)
@@ -51,7 +51,7 @@ export default class SingleProject extends Component {
 								A porfolio webstite to showcase the work of a 3D character artist.
 								<br/>
 								<br/>
-								Built with Node.js, Express.js, React, Filezilla.
+								Built with Node.js, Express.js, React, and hosted with Filezilla.
 								</p>
 		      		</span>
 	      		)
@@ -69,7 +69,7 @@ export default class SingleProject extends Component {
 								Exquisite Graveyard is an interactive drawing game that was modeled on the Exquisite Corpse game played by surrealist artists like Andre Breton & Salvador Dali in the 1920’s. This progressive web app allows you to draw exquisite corpses with your friends online.
 								<br/>
 								<br/>
-								Built as part of a four person team of developers in a two week sprint with Node.js, Express.js, React, and Firebase.
+								Built as part of a four person team of developers in a two week sprint with Node.js, Express.js, React, Cloud Firestore, and hosted with Firebase.
 								</p>
 		      		</span>
 			      )
@@ -84,10 +84,10 @@ export default class SingleProject extends Component {
 						text = (
 							<span>
 								<p>
-									D-Construction developed around the letter "D". I was interested in making my own typekit that looked like it was cut out of construction paper. All of the letters in the alphabet are constructed from various forms of the letter “D”; hence the title “D-Construction”.
+									D-Construction developed around the letter "D". I designed and constructed my own typekit to look like it was cut out of construction paper. All of the letters in the alphabet are constructed from various forms of the letter “D”; hence the title “D-Construction”.
 									<br/>
 									<br/>
-									Built with Node.js, Express.js, and React-Redux.
+									Built with Node.js, Express.js, and React-Redux, and hosted with Firebase.
 								</p>
 	      			</span>
 	      		)
@@ -134,42 +134,44 @@ export default class SingleProject extends Component {
 		return (
 			<div className="singleproject">
 
-			<p id="projectTitle">{this.state.projectName}</p>
+				<p id="projectTitle">{this.state.projectName}</p>
 
-			<div className="firstRow">
-					<div className="iphonecontainer">
-						<img  id="iphone" src="../../images/iphoneframe.png"/>
-						<div className="iphonecontent">
-							<Carousel device="iphone" images={mobileImages} />
+				<div className="firstRow">
+						<div className="iphonecontainer">
+							<img  id="iphone" src="../../images/iphoneframe.png"/>
+							<div className="iphonecontent">
+								<Carousel device="iphone" images={mobileImages} />
+							</div>
+						</div>
+
+					<div id="description">
+						{this.state.text}
+
+					<span id="projLinks">
+
+						<a href={this.state.link}>
+	            <i className="fa fa-external-link" aria-hidden="true"></i>
+	            <p>{this.state.link}</p>
+	          </a>
+
+	          <a href={this.state.link}>
+	            <i className="fa fa-code" aria-hidden="true"></i>
+	            <p>{this.state.code}</p>
+	          </a>
+
+				</span>
+
+					</div>
+				</div>
+
+				<div className="secondRow">
+					<div className="macbookcontainer">
+						<img  id="macbook" src="../../images/macbookframe.png"/>
+						<div className="macbookcontent">
+							<Carousel device="macbook" images={desktopImages} />
 						</div>
 					</div>
-
-				<div id="description">
-					{this.state.text}
-
-				<span id="projLinks">
-
-					<a href={this.state.link}>
-            <i className="fa fa-external-link" aria-hidden="true"></i>
-            <p>{this.state.link}</p>
-          </a>
-
-          <a href={this.state.link}>
-            <i className="fa fa-code" aria-hidden="true"></i>
-            <p>{this.state.code}</p>
-          </a>
-
-			</span>
-
 				</div>
-			</div>
-
-			<div className="macbookcontainer">
-				<img  id="macbook" src="../../images/macbookframe.png"/>
-				<div className="macbookcontent">
-					<Carousel device="macbook" images={desktopImages} />
-				</div>
-			</div>
 
 			</div>
 		)
