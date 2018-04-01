@@ -13,6 +13,7 @@
 
 .carouselcontent > img {
   display: none;
+  overflow: hidden;
 }
 
 .carouselbuttonmacbook{
