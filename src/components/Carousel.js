@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 
-require ('../styles/carousel.css')
+require('../styles/carousel.css')
 
 export default class Carousel extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {
       currentImageIdx: 0
@@ -11,17 +11,19 @@ export default class Carousel extends Component {
     this.changeSlide = this.changeSlide.bind(this)
   }
 
-  changeSlide() {
+  changeSlide () {
     this.setState({
-      currentImageIdx: this.props.images.length - 1 === this.state.currentImageIdx ? 0 : this.state.currentImageIdx + 1,
+      currentImageIdx:
+        this.props.images.length - 1 === this.state.currentImageIdx
+          ? 0
+          : this.state.currentImageIdx + 1
     })
   }
 
-  render() {
-
+  render () {
     return (
-      <div className="carouselcontent-container">
-        <a className="carouselcontent" onClick={this.changeSlide} tabIndex={-1} >
+      <div className='carouselcontent-container'>
+        <a className='carouselcontent' onClick={this.changeSlide} tabIndex={-1}>
           {this.props.images.map((image, index) => (
             <img
               src={image.src}
@@ -31,7 +33,7 @@ export default class Carousel extends Component {
             />
           ))}
           <span className={`carouselbutton${this.props.device}`}>
-            <img src={'../../images/right-arrow.svg'} />
+            <img src='../../images/right-arrow.svg' />
           </span>
         </a>
       </div>

@@ -7,7 +7,6 @@ import history from './history'
 ReactDOM.render(
   <Router onUpdate={() => window.scrollTo(0, 0)} history={history}>
     <UserInterface />
-  </Router>
-  ,
+  </Router>,
   document.getElementById('root')
 )

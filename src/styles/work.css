@@ -12,7 +12,7 @@ body {
 .outterWorkContainer {
   position: absolute;
   top: 10vh;
-  background-color: /*#b7e8e8;*/ /*#aae0ff;*/ #c2e3ed /*#ffdfc1*/;
+  background-color: #c2e3ed;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -33,9 +33,12 @@ body {
   flex-direction: row;
   align-items: baseline;
   margin: 0 auto;
-  /*background-color:#b7e8e8;*/
   text-align: center;
   z-index: 99;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 #workContainer img{
@@ -47,7 +50,7 @@ body {
   font-size: 1.35em;
   font-weight: 400px;
   color: white;
-  text-shadow: 2px 2px 6px #f4cbb5; /*#b7e8e8;*/ /*#f4cbb5*/
+  text-shadow: 2px 2px 6px #f4cbb5;
   margin: auto;
   position: relative;
   top: -1em;
@@ -81,52 +84,20 @@ body {
     flex-direction: column;
     align-items: center;
     z-index: 99;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
   }
 
   #projTitle{
-  font-family: 'Varela Round', sans-serif;
-  font-size: 1em;
-  font-weight: 400px;
-  color: white;
-  text-shadow: 2px 2px 6px #f4cbb5;
-  margin: auto;
-  position: relative;
-  top: -1em;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1em;
+    font-weight: 400px;
+    color: white;
+    text-shadow: 2px 2px 6px #f4cbb5;
+    margin: auto;
+    position: relative;
+    top: -1em;
   }
 }
-
-/*@media(min-width: 800px) and (max-height: 315px) {*/
-/*  @media (max-height: 415px) {
-  #workContainer {
-  position: relative;
-  width: 80vh;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
-  margin: 0 auto;
-  }
-}*/
-/*
-    clip-path: url(#litteMorphClip2);
-    -webkit-clip-path: url(#litteMorphClip2);
-    -webkit-transform-style: preserve-3d;
-*/
-
-/*
-div {
-    display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-    display: flex;
-    flex-wrap: wrap;
-    -moz-
-}
-*/
-
-
-
-
-
-
-

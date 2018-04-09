@@ -1,42 +1,80 @@
-/*#inner {
-  position: fixed;
+
+#inner-wrapper{
+    background-image: url(/images/LA.jpg);
+    background-repeat: no-repeat;
+    -moz-clip-path: url(#blobClip);
+    -webkit-clip-path: url(#blobClip);
+    clip-path: url(#blobClip);
+    background-size: cover;
+    position: relative;
+    top: 10vh;
+    height: 90vh;
+    opacity: 0.8;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0px);
+    -moz-transform: translateZ(0px);
+    transform: translateZ(0px);
+    overflow: hidden;
+  }
+
+#svg-wrapper{
+  opacity: 0;
+  -webkit-transition: transform 2s ease-out;
+  -moz-transition: transform 2s ease-out;
+  transition: transform 2s ease-out;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  rotate: (0.001deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
-*/
+
+#blobClip{
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  transform-origin: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#blobby {
+  -moz-transform: rotate(0.01deg);
+  -webkit-transform: rotate(0.01deg);
+  transform: rotate(0.01deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
 #outterText {
   display: flex;
   align-items: center;
   justify-content: center;
   align-self: center;
-  font-size: 40px;
+  font-size: 35px;
   z-index: 3;
   position: absolute;
   top: 45vh;
-  left: 25vw;
+  left: 30vw;
   cursor: pointer;
   text-decoration: none;
 }
 #outterText  a {
   color: #ff6919;
-  font-size: 40px;
+  font-size: 35px;
   cursor: pointer;
   opacity: .3;
   text-decoration: none;
 }
 
 #outterText p{
-font-family: 'Varela Round', sans-serif;
+  font-family: 'Varela Round', sans-serif;
 }
 #innerText p{
-font-family: 'Varela Round', sans-serif;
+  font-family: 'Varela Round', sans-serif;
 }
-/*font-family: 'Nanum Gothic Coding', monospace;
-font-family: 'Nixie One', cursive;
-font-family: 'Londrina Outline', cursive;
-font-family: 'Slabo 27px', serif;
-font-family: 'IBM Plex Sans Condensed', sans-serif;
-font-family: 'Source Sans Pro', sans-serif;
-font-family: 'Varela Round', sans-serif;
-font-family: 'Vollkorn', serif;*/
 
 #innerText{
   text-shadow: black 5px 0 20px;
@@ -45,11 +83,11 @@ font-family: 'Vollkorn', serif;*/
   justify-content: center;
   align-self: center;
   color: white;
-  font-size: 40px;
+  font-size: 35px;
   z-index: 9999;
   position: absolute;
   top: 35vh;
-  left: 25vw;
+  left: 30vw;
   cursor: pointer;
   opacity: 1;
 }
@@ -57,4 +95,7 @@ font-family: 'Vollkorn', serif;*/
   width: 100%;
   filter: drop-shadow(-16px 16px 50px grey);
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
