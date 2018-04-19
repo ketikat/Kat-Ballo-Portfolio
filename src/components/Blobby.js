@@ -64,8 +64,8 @@ export default class Blobby extends Component {
     anime({
       targets: this.refs.morph.querySelector('path'),
       duration: 10000,
-      // easing: [0.5, 0, 0.5, 1],
-      easing: 'linear',
+      easing: [0.5, 0, 0.5, 1],
+      // easing: 'linear',
       rotate: 0.1,
       d: this.refs.morph
         .querySelector('path')

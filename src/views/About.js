@@ -15,6 +15,16 @@ export default function About (props) {
             Designer, Architect, and Fabricator.
             <br />
             <br />
+            The code for this website can be found on my &nbsp;
+            <a
+              href='https://github.com/ketikat/Kat-Ballo-Portfolio'
+              rel='noopener noreferrer'
+              target='_blank'
+            >
+              <u>github</u> &nbsp; <i className='fa fa-sm fa-github' />
+            </a>
+            <br />
+            <br />
             Please get in touch if you'd like to work on something together
             &nbsp;
             <a href='mailto:katballo@gmail.com'>
@@ -29,7 +39,7 @@ export default function About (props) {
           <h3>skills</h3>
           <h4>Javascript(ES6)</h4>
           <p>
-            React, Redux, Webpack, Express, Node, SQL, PostgreSQL, WebSockets
+            React, Redux, Webpack, Express, Node, PostgreSQL, WebSockets
           </p>
           <br />
           <br />
