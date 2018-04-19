@@ -3,7 +3,7 @@ import anime from 'animejs'
 import { Link } from 'react-router-dom'
 require('../styles/blobby.css')
 
-// **************************** BOLB MORPH ADAPTED FROM CODROPS **************************************************
+// **************************** BLOB MORPH ADAPTED FROM CODROPS **************************************************
 
 // **************************** helper function **************************************************
 // equation of a line
@@ -11,7 +11,6 @@ const lineEq = (y2, y1, x2, x1, currentVal) => {
   const mm = (y2 - y1) / (x2 - x1)
   const bb = y1 - mm * x1
   return mm * currentVal + bb
-  // * .8
 }
 // ******************************************************************************
 
@@ -170,22 +169,6 @@ export default class Blobby extends Component {
         let transX = 2 * tilt.tx / WWid * mousepos.x - tilt.tx
         let transY = 2 * tilt.ty / WHei * mousepos.y - tilt.ty
 
-        //  anime({
-        //       targets: this.refs.morph,
-        //       easing: 'linear',
-        //       duration: 500,
-        //       translateX: transX,
-        //       tranaslateY: transY,
-        //       tranaslateZ: 0,
-        //       rotateX: 0,
-        //       rotateY: 0,
-        //       rotateZ: 1,
-        //       rotateA: rotZ,
-        //       scaleY: scaleY,
-        //       scaleX: scaleX,
-        //       scaleZ: 1
-        // })
-
         this.refs.morph.style.transform = `translate3d(${transX}px,${transY}px,0) rotate3d(0,0,1,${rotZ}deg) scale3d(${scaleX},${scaleY},1)`
       }
     })
@@ -234,6 +217,13 @@ export default class Blobby extends Component {
                     id='path'
                     d='M 0.883 0.526 C 0.866 0.667 0.78 0.814 0.669 0.871 0.539 0.938 0.366 0.904 0.246 0.815 0.178 0.766 0.129 0.671 0.117 0.579 0.099 0.438  0.118 0.256 0.212 0.167 0.354 0.032 0.605 0.012 0.757 0.129 0.859 0.206 0.9 0.386 0.883 0.526Z'
                     pathdata='M  0.883 0.543 C 0.869 0.667 0.733 0.731 0.634 0.779 0.514 0.839 0.363 0.898 0.246 0.832 0.174 0.792 0.129 0.688 0.117 0.595 0.099 0.455 0.117 0.271 0.212 0.183 0.329 0.075 0.532 0.023 0.658 0.168 0.752 0.275 0.901 0.392 0.883 0.543 Z;M 0.929 0.526C 0.913 0.667 0.83 0.824 0.715 0.871 0.59 0.922 0.452 0.813 0.333 0.744 0.235 0.688 0.106 0.636  0.071 0.515 0.037 0.399 0.072 0.236 0.154 0.159 0.323 0.001 0.623 0.00 0.803 0.129 0.904 0.207 0.946 0.386 0.929  0.526 Z;M 0.883 0.526 C 0.866 0.667 0.78 0.814 0.669 0.871 0.539 0.938 0.366 0.904 0.246 0.815 0.178 0.766 0.129 0.671 0.117 0.579 0.099 0.438  0.118 0.256 0.212 0.167 0.354 0.032 0.605 0.012 0.757 0.129 0.859 0.206 0.9 0.386 0.883 0.526 Z'
+                  />
+                </clipPath>
+
+                <clipPath id='noAnimate' clipPathUnits='objectBoundingBox'>
+                  <path
+                    id='path'
+                    d='M 0.883 0.526 C 0.866 0.667 0.78 0.814 0.669 0.871 0.539 0.938 0.366 0.904 0.246 0.815 0.178 0.766 0.129 0.671 0.117 0.579 0.099 0.438  0.118 0.256 0.212 0.167 0.354 0.032 0.605 0.012 0.757 0.129 0.859 0.206 0.9 0.386 0.883 0.526Z'
                   />
                 </clipPath>
               </defs>

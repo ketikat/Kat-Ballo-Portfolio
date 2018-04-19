@@ -1,5 +1,4 @@
 .aboutOutterContainer{
-  /*background-color: #ffdfc1;*/
   width: 100%;
   height: 100vh;
   position: relative;
@@ -39,7 +38,6 @@ font-family: 'Varela Round', sans-serif;
 }
 
 .contactOutterContainer{
-  /*background-color: #f4e3e3;*/
   width: 100%;
   height: 100vh;
   position: relative;
