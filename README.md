@@ -1,6 +1,6 @@
 # Kat Ballo - Web Dev Portfolio
 
-This is my web developer portfolio. It runs beautifully on Google Chrome with full SVG animations. However, on other browers the animations are disabled. 
+This is my web developer portfolio. It runs beautifully on Google Chrome with full SVG animations. However, on other browers the animations are disabled. It is also mobile friendly!
 
 This was inspiried by this coddrops project: https://tympanus.net/Development/ShapeMorphIdeas/index4.html 
 
