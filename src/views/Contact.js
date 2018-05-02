@@ -53,11 +53,3 @@ export default function Contact (props) {
     </div>
   )
 }
-
-
-
-  // <a
-  //             href='https://www.linkedin.com/in/kat-ballo-11200063/'
-  //             target='_blank'
-  //             rel='noopener noreferrer'
-  //           >
