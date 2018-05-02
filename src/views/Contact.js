@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 require('../styles/aboutContact.css')
 
 export default function Contact (props) {
@@ -24,14 +25,14 @@ export default function Contact (props) {
           </div>
 
           <div>
-            <a
-              href='https://www.linkedin.com/in/kat-ballo-11200063/'
+            <Link
+              to='https://www.linkedin.com/in/kat-ballo'
               target='_blank'
               rel='noopener noreferrer'
             >
               <i className='fa fa-4x fa-linkedin' />
               <p>LinkedIn</p>
-            </a>
+            </Link>
           </div>
 
           <div id='cvLink'>
@@ -52,3 +53,11 @@ export default function Contact (props) {
     </div>
   )
 }
+
+
+
+  // <a
+  //             href='https://www.linkedin.com/in/kat-ballo-11200063/'
+  //             target='_blank'
+  //             rel='noopener noreferrer'
+  //           >
