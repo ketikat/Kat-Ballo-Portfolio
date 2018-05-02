@@ -39,7 +39,6 @@ npm run build
 * [Firebase](https://firebase.google.com/)
 * [React](https://reactjs.org/)
 * [Anime.js](http://animejs.com)
-* [React RPG](https://www.npmjs.com/package/react-rpg)
 * [React Transition Group](https://github.com/reactjs/react-transition-group)
 
 ## Special thanks to
