@@ -14,14 +14,14 @@ export default function Contact (props) {
         </p>
         <div id='iconsContainer'>
           <div>
-            <a
+            <Link
               href='https://github.com/ketikat'
               rel='noopener noreferrer'
               target='_blank'
             >
               <i className='fa fa-4x fa-github' />
               <p>github</p>
-            </a>
+            </Link>
           </div>
 
           <div>
@@ -30,6 +30,7 @@ export default function Contact (props) {
               target='_blank'
               rel='noopener noreferrer'
             >
+            <p>TXT TEST</p>
               <i className='fa fa-4x fa-linkedin' />
               <p>LinkedIn</p>
             </Link>
@@ -38,7 +39,7 @@ export default function Contact (props) {
           <div id='cvLink'>
             <a href='../../Kat_Ballo-CV.pdf' download='Kat_Ballo-CV.pdf'>
               <img src='../cv.svg' className='fa' />
-              <p> download</p>
+              <p>download</p>
             </a>
           </div>
 
