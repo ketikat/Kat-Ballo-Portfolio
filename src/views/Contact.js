@@ -24,13 +24,14 @@ export default function Contact (props) {
             </Link>
           </div>
 
+            <p>TXT TEST</p>
           <div>
             <Link
               to='https://www.linkedin.com/in/kat-ballo'
               target='_blank'
               rel='noopener noreferrer'
             >
-            <p>TXT TEST</p>
+
               <i className='fa fa-4x fa-linkedin' />
               <p>LinkedIn</p>
             </Link>
