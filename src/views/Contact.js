@@ -24,7 +24,6 @@ export default function Contact (props) {
             </Link>
           </div>
 
-            <p>TXT TEST</p>
           <div>
             <Link
               to='https://www.linkedin.com/in/kat-ballo'
@@ -45,10 +44,10 @@ export default function Contact (props) {
           </div>
 
           <div>
-            <a href='mailto:katballo@gmail.com'>
+            <Link href='mailto:katballo@gmail.com'>
               <i className='fa fa-4x fa-envelope-o' />
               <p> &nbsp;Email</p>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
