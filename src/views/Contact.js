@@ -36,7 +36,7 @@ export default function Contact (props) {
           </div>
 
           <div id='cvLink'>
-            <a href='../../katballo-CV.pdf' download='Kat_Ballo-CV.pdf'>
+            <a href='../../Kat_Ballo-CV.pdf' download='Kat_Ballo-CV.pdf'>
               <img src='../cv.svg' className='fa' />
               <p> download</p>
             </a>
