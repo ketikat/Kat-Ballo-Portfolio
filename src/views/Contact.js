@@ -15,7 +15,7 @@ export default function Contact (props) {
         <div id='iconsContainer'>
           <div>
             <Link
-              href='https://github.com/ketikat'
+              to='https://github.com/ketikat'
               rel='noopener noreferrer'
               target='_blank'
             >
@@ -37,14 +37,14 @@ export default function Contact (props) {
           </div>
 
           <div id='cvLink'>
-            <a href='../../Kat_Ballo-CV.pdf' download='Kat_Ballo-CV.pdf'>
+            <Link to='../../Kat_Ballo-CV.pdf' download='Kat_Ballo-CV.pdf'>
               <img src='../cv.svg' className='fa' />
               <p>download</p>
-            </a>
+            </Link>
           </div>
 
           <div>
-            <Link href='mailto:katballo@gmail.com'>
+            <Link to='mailto:katballo@gmail.com'>
               <i className='fa fa-4x fa-envelope-o' />
               <p> &nbsp;Email</p>
             </Link>
