@@ -15,7 +15,7 @@ export default function Contact (props) {
         <div id='iconsContainer'>
           <div>
             <Link
-              href='https://github.com/ketikat'
+              to='https://github.com/ketikat'
               rel='noopener noreferrer'
               target='_blank'
             >
