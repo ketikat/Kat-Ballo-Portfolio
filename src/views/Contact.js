@@ -16,8 +16,8 @@ export default function Contact (props) {
           <div>
             <Link
               to='https://github.com/ketikat'
-              rel='noopener noreferrer'
               target='_blank'
+              rel='noopener noreferrer'
             >
               <i className='fa fa-4x fa-github' />
               <p>github</p>
@@ -30,7 +30,6 @@ export default function Contact (props) {
               target='_blank'
               rel='noopener noreferrer'
             >
-
               <i className='fa fa-4x fa-linkedin' />
               <p>LinkedIn</p>
             </Link>
