@@ -1,5 +1,7 @@
 # Ignore all node_modules
 node_modules/*
+ADDTOPROJECTS/*
+
 
 # Compiled JS
 public/bundle.js

@@ -86,3 +86,26 @@
   backface-visibility: hidden;
   transform-style: preserve-3d;
 }
+
+
+@media (max-width: 550px) {
+  #outterText p{
+    font-size: 18px;
+  }
+  #innerText p{
+    font-size: 18px;
+  }
+  #outterText a{
+    font-size: 18px;
+  }
+  #innerText a{
+    font-size: 18px;
+  }
+  #outterText {
+    font-size: 18px;
+  }
+  #innerText {
+    font-size: 18px;
+  }
+
+}
